@@ -1,28 +1,26 @@
-version: '3.3'
+version: '3.8'
 
 services:
   db:
     image: postgres:13.0-alpine
+    restart: always
     volumes:
       - /var/lib/postgresql/data/
     env_file:
       - ./.env
-
   web:
-    build:
-      context: ../
-      dockerfile: api_yamdb/Dockerfile
+    image: dimaconway/practicum:latest
     restart: always
     volumes:
-      - static_value:/app/api_yamdb/static/
-      - media_value:/app/api_yamdb/media/
+      - static_value:/app/static/
+      - media_value:/app/media/
     depends_on:
       - db
     env_file:
       - ./.env
-
   nginx:
     image: nginx:1.21.3-alpine
+    restart: always
     ports:
       - "80:80"
     volumes:
