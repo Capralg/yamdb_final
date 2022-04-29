@@ -40,4 +40,4 @@ python3 manage.py runserver
 e-mail: f.v.gurin@gmail.com
 Telegram: @f_gurin
 
-![example workflow](https://github.com/capralg/yamdb_final/actions/workflows/yamdb_final/badge.svg)
+![example workflow](https://github.com/Capralg/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
