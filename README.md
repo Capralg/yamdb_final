@@ -41,3 +41,5 @@ e-mail: f.v.gurin@gmail.com
 Telegram: @f_gurin
 
 ![example workflow](https://github.com/Capralg/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+
+Адрес проекта: 51.250.106.26
